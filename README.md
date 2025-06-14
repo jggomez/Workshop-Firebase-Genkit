@@ -38,15 +38,15 @@ The workshop is divided into sequential modules. Each folder contains a `README.
 
     Force the model to return responses in a structured and predictable JSON format using **Zod** schemas.
 
-6.  ### [06-multimodal-output](https://www.google.com/search?q=./06-multimodal-output/)
+6.  ### [06-multimodal-output](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/06-multimodal-output)
 
     Explore the multimodal capabilities of models, allowing them to process inputs that combine text and images.
 
-7.  ### [07-flows](https://www.google.com/search?q=./07-flows/)
+7.  ### [07-flows](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/07-flows)
 
     Define and use **Flows** to encapsulate complex AI logic, orchestrate multiple steps, and simplify the deployment of your functions.
 
-8.  ### [08-rag](https://www.google.com/search?q=./08-rag/)
+8.  ### [08-rag](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/08-rag)
 
     Implement a complete **RAG (Retrieval-Augmented Generation)** flow to build a question-answering system based on knowledge from external documents.
 
