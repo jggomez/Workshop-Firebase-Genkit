@@ -18,7 +18,7 @@ Before you begin, please ensure you have the following installed:
 
 The workshop is divided into sequential modules. Each folder contains a `README.md` file with specific instructions for that step.
 
-1.  ### [01-install]([https://www.google.com/search?q=./01-install/](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/01-install))
+1.  ### [01-install](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/01-install)
 
     Initial environment setup, installation of Genkit dependencies, and configuration of the API key to communicate with AI models.
 
