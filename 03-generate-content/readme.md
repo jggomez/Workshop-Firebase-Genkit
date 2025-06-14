@@ -3,6 +3,12 @@ The primary interface for interacting with generative AI models in Genkit is the
 
 ### Basic Usage
 
+After you’ve created an API key, set the GEMINI_API_KEY environment variable to your key:
+
+```shell
+export GEMINI_API_KEY=<your API key>
+```
+
 You can specify a default model when configuring Genkit, or provide a model for individual `generate()` calls.
 
 ```javascript
@@ -18,7 +24,7 @@ const ai = genkit({
 
 async function main() {
   // make a generation request with the default model
-  const { text } = await ai.generate('Hello, Gemini!');
+  const { text } = await ai.generate('Create a poem for this beautiful community of developers');
   console.log(text);
 }
 
@@ -43,6 +49,8 @@ async function run() {
   });
   console.log(response1.text);
 
+  console.log("*********************");
+
   // Generate with a model string ID
   const response2 = await ai.generate({
     model: 'googleai/gemini-2.0-flash-001',
@@ -59,10 +67,13 @@ run();
 Some models support a `system` prompt, which provides instructions on how the model should respond, such as adopting a persona or tone.
 
 ```javascript
-import { googleAI } from '@genkit-ai/googleai';
-import { genkit } from 'genkit';
+import { googleAI, gemini25FlashPreview0417 } from "@genkit-ai/googleai";
+import { genkit } from "genkit";
 
-const ai = genkit({ plugins: [googleAI()] });
+const ai = genkit({
+  plugins: [googleAI()],
+  model: gemini25FlashPreview0417,
+});
 
 async function runSystemPrompt() {
   const response = await ai.generate({
