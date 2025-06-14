@@ -22,19 +22,19 @@ The workshop is divided into sequential modules. Each folder contains a `README.
 
     Initial environment setup, installation of Genkit dependencies, and configuration of the API key to communicate with AI models.
 
-2.  ### [02-development-tools](https://www.google.com/search?q=./02-development-tools/)
+2.  ### [02-development-tools](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/02-development-tools)
 
     An introduction to Genkit's development tools: the **CLI** and the **Developer UI**, which will allow you to test, debug, and inspect your AI flows interactively.
 
-3.  ### [03-generate-content](https://www.google.com/search?q=./03-generate-content/)
+3.  ### [03-generate-content](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/03-generate-content)
 
     Make your first call to an AI model for basic text generation. You will learn to use the `ai.generate()` method.
 
-4.  ### [04-chat-conversations](https://www.google.com/search?q=./04-chat-conversations/)
+4.  ### [04-chat-conversations](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/04-chat-conversations)
 
     Learn to manage history and context in multi-turn (chat-like) conversations to create more fluid and coherent interactions.
 
-5.  ### [05-output-structured](https://www.google.com/search?q=./05-output-structured/)
+5.  ### [05-output-structured](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/05-output-structured)
 
     Force the model to return responses in a structured and predictable JSON format using **Zod** schemas.
 
