@@ -1,0 +1,7 @@
+---
+tools: [ getCharacterQuotesGameOfThrones ] # Specify tools in YAML front matter
+input:
+  schema:
+    name: string
+---
+"Create a poem with 2 commons quotes by {{name}} in Game Of Thrones"

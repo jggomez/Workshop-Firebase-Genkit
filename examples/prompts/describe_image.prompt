@@ -1,0 +1,9 @@
+---
+model: googleai/gemini-2.0-flash
+input:
+  schema:
+    photoUrl: string
+---
+Describe this image in a detailed paragraph:
+
+{{media url=photoUrl}}

@@ -1,0 +1,73 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.report/
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependencies
+node_modules/
+/jspm_packages/
+
+# TypeScript files
+*.ts
+*.tsx
+!*.d.ts # Keep TypeScript declaration files if you are publishing a library
+# Generated declaration files
+dist/**/*.d.ts
+src/**/*.d.ts
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Local .env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Yarn Sagas (https://yarnpkg.com/features/sagas)
+.yarn/sagas/
+
+# Yarn berry (https://yarnpkg.com/features/pnp)
+.pnp.*
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv files
+.env.*
+
+# Editor directories and files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+.project
+.classpath
+.settings/
+
+# macOS
+.DS_Store
+
+# Thumbnails
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db

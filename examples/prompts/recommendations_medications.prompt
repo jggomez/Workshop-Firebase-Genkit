@@ -1,0 +1,27 @@
+---
+model: googleai/gemini-2.0-flash
+config:
+  temperature: 0.4
+  topK: 31
+  topP: 0.92
+input:
+  schema:
+    symptoms?: string
+  default:
+    symptoms: "headache"
+output:
+  schema:
+    recommendations: string
+    medications(array): 
+      name: string
+      dosage: string
+      frequency: string
+---
+
+{{role "system"}}
+You are a doctor with an extensive experience. Please supply recommendations about treatment and medications.
+
+{{role "user"}}
+I'm feeling bad and have the following symptoms:
+{{symptoms}}
+Please describe recommendations, and medications.

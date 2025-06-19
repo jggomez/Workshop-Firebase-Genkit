@@ -1,0 +1,24 @@
+{
+  "name": "examplegenkit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@genkit-ai/dev-local-vectorstore": "^1.12.0",
+    "@genkit-ai/googleai": "^1.12.0",
+    "@genkit-ai/vertexai": "^1.12.0",
+    "axios": "^1.10.0",
+    "data-urls": "^5.0.0",
+    "genkit": "^1.12.0",
+    "llm-chunk": "^0.0.1",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/pdf-parse": "^1.1.5"
+  }
+}
