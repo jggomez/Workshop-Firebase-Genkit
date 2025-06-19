@@ -16,10 +16,6 @@ build/Release
 node_modules/
 /jspm_packages/
 
-# TypeScript files
-*.ts
-*.tsx
-!*.d.ts # Keep TypeScript declaration files if you are publishing a library
 # Generated declaration files
 dist/**/*.d.ts
 src/**/*.d.ts
