@@ -37,7 +37,7 @@ export const BlogPostFlowWithSchema = ai.defineFlow(
     ]);
     const { output } = await ai.generate({
       model: gemini25FlashPreview0417,
-      prompt: `Create a blog post for national geographic over this animal ${text}`,
+      prompt: `Create a blog post for national geographic over these animals ${text}`,
       output: { schema: BlogPostSchema },
     });
     if (output == null) {
