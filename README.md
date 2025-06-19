@@ -14,62 +14,51 @@ Before you begin, please ensure you have the following installed:
   * A code editor like **Visual Studio Code**.
   * An **API key** for a generative model. For these examples, we will use the **Gemini API**, which you can get for free from [Google AI Studio](https://aistudio.google.com/app/apikey).
 
-## Workshop Structure
+This workshop provides hands-on experience with **Genkit**, an open-source framework for building AI-powered applications, specifically focusing on its integration with **Firebase projects**. You'll learn how to build robust and scalable generative AI features, from basic setup to advanced AI functionalities.
 
-The workshop is divided into sequential modules. Each folder contains a `README.md` file with specific instructions for that step.
+---
 
-1.  ### [01-install](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/01-install)
+### Workshop Modules
 
-    Initial environment setup, installation of Genkit dependencies, and configuration of the API key to communicate with AI models.
+The workshop is structured into sequential modules, each in its own directory:
 
-2.  ### [02-development-tools](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/02-development-tools)
+* **01-install**: Get started by setting up your environment and installing Genkit and its dependencies.
+* **02-development-tools**: Learn to use Genkit's powerful development tools for inspecting and debugging your AI flows.
+* **03-generate-content**: Explore the fundamentals of generating text and other content using Genkit.
+* **04-chat-conversations**: Dive into building conversational AI experiences, including managing chat history and context.
+* **05-output-structured**: Understand how to generate structured outputs from large language models for easier integration into your applications.
+* **06-multimodal-output**: Learn to generate multimodal content, combining text with images or other media.
+* **07-flows**: Focus on creating and managing complex AI flows, orchestrating multiple AI operations.
+* **08-prompts**: Discover best practices and techniques for designing effective prompts to guide AI model behavior.
+* **09-chat-sessions**: Deep dive into managing persistent chat sessions, user context, and conversation history.
+* **10-tool-calling**: Enable your AI models to interact with external tools and APIs, extending their capabilities.
+* **11-rag**: Learn about Retrieval Augmented Generation (RAG) to enhance AI responses with external knowledge bases.
 
-    An introduction to Genkit's development tools: the **CLI** and the **Developer UI**, which will allow you to test, debug, and inspect your AI flows interactively.
+---
 
-3.  ### [03-generate-content](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/03-generate-content)
+### Setup and Prerequisites
 
-    Make your first call to an AI model for basic text generation. You will learn to use the `ai.generate()` method.
+To participate in this workshop, you'll need:
 
-4.  ### [04-chat-conversations](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/04-chat-conversations)
+* **Node.js** (LTS version recommended)
+* **npm** or **Yarn**
+* A **Google Cloud Project** (for Firebase and AI services)
+* Familiarity with **JavaScript/TypeScript**
 
-    Learn to manage history and context in multi-turn (chat-like) conversations to create more fluid and coherent interactions.
+Detailed setup instructions are provided within the `01-install` module.
 
-5.  ### [05-output-structured](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/05-output-structured)
+---
 
-    Force the model to return responses in a structured and predictable JSON format using **Zod** schemas.
+### Running Examples
 
-6.  ### [06-multimodal-output](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/06-multimodal-output)
+Each module directory contains a `README.md` with specific instructions for running its examples. Generally, the process involves:
 
-    Explore the multimodal capabilities of models, allowing them to process inputs that combine text and images.
+1.  Navigating to the module directory (e.g., `cd 01-install`).
+2.  Installing dependencies (`npm install` or `yarn install`).
+3.  Running the example (`npx genkit start -- npx tsx --watch src/01.ts`).
 
-7.  ### [07-flows](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/07-flows)
+---
 
-    Define and use **Flows** to encapsulate complex AI logic, orchestrate multiple steps, and simplify the deployment of your functions.
+### Contributing and License
 
-8.  ### [08-rag](https://github.com/jggomez/Workshop-Firebase-Genkit/tree/main/08-rag)
-
-    Implement a complete **RAG (Retrieval-Augmented Generation)** flow to build a question-answering system based on knowledge from external documents.
-
-## How to Use This Repository
-
-1.  **Clone the repository to your local machine:**
-
-    ```bash
-    git clone https://github.com/jggomez/Workshop-Firebase-Genkit.git
-    ```
-
-2.  **Navigate to the project directory:**
-
-    ```bash
-    cd Workshop-Firebase-Genkit
-    ```
-
-3.  **Start with the first module:**
-    Enter the first folder (`cd 01-install`) and follow the instructions in its respective `README.md` file.
-
-4.  **Advance sequentially:**
-    Complete the modules in numerical order for the best learning experience.
-
------
-
-Enjoy building with Genkit\!
+This repository is primarily for workshop participants. If you have any problems or have suggestions, please feel free to open an issue. The project is licensed under the MIT License.
