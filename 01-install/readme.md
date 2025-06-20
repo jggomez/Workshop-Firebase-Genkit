@@ -28,5 +28,21 @@ To get started with Genkit, you'll need `Node.js` and `npm`, and an API key for 
 
 ### Installation
 
+* First of all, create a node project
+
+```shell
+npm init
+```
+
+Ok, now install dependencies
+
 1.  **Install Genkit dependencies:** Install the `genkit` core library and the `@genkit-ai/googleai` plugin to access Google AI Gemini models.
-2.  **Configure your model API key:** Set the `GEMINI_API_KEY` environment variable with your API key.
+
+```shell
+npm install genkit @genkit-ai/googleai
+```
+
+3.  **Configure your model API key:** Set the `GEMINI_API_KEY` environment variable with your API key.
+```shell
+export GEMINI_API_KEY=APIKEY
+```
