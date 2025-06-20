@@ -31,6 +31,12 @@ async function main() {
 main();
 ```
 
+You can execute the code with the following command:
+
+```bash
+genkit start -- npx tsx --watch src/FILE_NAME.ts
+```
+
 You can also specify a model directly within the `generate()` call using a model reference function or a string identifier:
 
 ```javascript
