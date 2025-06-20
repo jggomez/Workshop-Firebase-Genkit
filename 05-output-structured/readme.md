@@ -6,10 +6,13 @@ Genkit allows you to request structured output from models by specifying a schem
 
 ```javascript
 import { z } from 'genkit';
-import { googleAI } from '@genkit-ai/googleai';
+import { googleAI, gemini25FlashPreview0417 } from '@genkit-ai/googleai';
 import { genkit } from 'genkit';
 
-const ai = genkit({ plugins: [googleAI()] });
+const ai = genkit({
+  plugins: [googleAI()],
+  model: gemini25FlashPreview0417,
+});
 
 // Define a Zod schema for your desired output structure
 const MenuItemSchema = z.object({
