@@ -1,6 +1,6 @@
 ## Chat Conversations
 
-For multi-turn conversations, you can use the `messages` parameter instead of `prompt` to provide a conversation history. This helps maintain context across interactions.
+For multi-turn conversations, you can use the `messages` parameter instead of `prompt` to provide a conversation history but the history is not saved automatically. This helps maintain context across interactions.
 
 ```javascript
 import { googleAI, gemini25FlashPreview0417 } from "@genkit-ai/googleai";
